@@ -1,0 +1,61 @@
+X resolution is 320
+-- same as Sega Genesis and VGA
+-- at 8px per char, 40 ch wide = C64 text
+Y resolution:
+-- 224 to match Genesis? (12x18+8)
+-- 240 to match 4x3? (12x20)
+-- 300 for 12px*25rows?
+
+
+MODES
+-----
+Title
+-- login box
+-- server select
+-- options dialog
+---- controls
+---- music/sfx
+Main
+-- stage (w/ widgets)
+---- layers
+-- actors
+---- sprites by piece
+-- status bar
+---- L-menu for actions
+------ Emote/Speak/Inspect
+---- R-menu to swap modes
+------ Main/Mail/Build/Code
+-- effects
+---- dialog
+
+U  abcd
+UR efgh
+R  ijkl
+DR mnop
+D  qrst
+DL uvwx
+L  yz!?
+UL .,'"
+-  sp/bksp/enter/cancel
+
+STANDARD ANIMATIONS
+-------------------
+NOTE: animations can layer; e.g. wave+run
+motion
+-- stand/idle
+-- run
+-- jump
+emote
+-- wave
+-- point
+-- shock
+-- bow
+item
+-- fire/thrust
+-- swing/slash
+-- throw
+-- charge
+state
+-- sit
+-- ouch
+-- 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.0.0/dist/phaser.min.js"></script>
+  </head>
+  <body>
+    
+    <script>
+
+      const XSIZE = 320;
+      const YSIZE = 224;
+      
+      var config = {
+      type: Phaser.AUTO,
+      width: XSIZE,
+      height: YSIZE,
+      physics: {
+      default: 'arcade',
+      arcade: {
+      gravity: { y: YSIZE/2 }
+      }
+      },
+      scene: {
+      preload: preload,
+      create: create
+      },
+      pixelArt: true,
+      zoom: 3
+      };
+
+      var game = new Phaser.Game(config);
+      
+      function preload ()
+      {
+      this.load.setBaseURL('http://labs.phaser.io');
+
+      this.load.image('sky', 'assets/skies/space3.png');
+      this.load.image('logo', 'assets/sprites/phaser3-logo.png');
+      this.load.image('red', 'assets/particles/red.png');
+      }
+
+      function create ()
+      {
+      this.add.image(XSIZE/2, YSIZE/2, 'sky');
+      }
+    </script>
+
+  </body>
+</html>
